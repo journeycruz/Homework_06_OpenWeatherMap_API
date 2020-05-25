@@ -1,0 +1,106 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+ }
+  
+ textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+ }
+
+ .container {
+   padding: 0;
+   width: 100%;
+   float: right;
+ }
+
+ #relativeHeader {
+    position: relative;
+    background-color: #343A40;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 6px;
+ }
+  
+ .description {
+    white-space: pre-wrap;
+ }
+  
+ .time-block {
+    text-align: center;
+    border-radius: 15px;
+ }
+  
+ .row {
+   padding-left: 5px;
+ }
+
+ #citySearch {
+   position: relative;
+   padding: 20px;
+   background-color: #F8F9FA;
+   border-right: 3px solid white;
+ }
+ 
+ #searchText {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 900;
+ }
+
+ #cityBtn {
+   padding: 10px;
+   font-size: 12px;
+   border: 1px solid #DFDFDF;
+   background: white;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+ 
+ /* Style the search field */
+ form.example input[type=text] {
+   padding: 10px;
+   font-size: 12px;
+   border: 1px solid #DFDFDF;
+   float: left;
+   width: 60%;
+   background: white;
+ }
+ 
+ /* Style the submit button */
+ form.example button {
+   float: left;
+   width: 10%;
+   padding: 10px;
+   background: #0076FF;
+   color: white;
+   font-size: 17px;
+   border: 1px solid #DFDFDF;
+   border-left: none; /* Prevent double borders */
+   cursor: pointer;
+ }
+ 
+ form.example button:hover {
+   background: #0b7dda;
+ }
+ 
+ /* Clear floats */
+ form.example::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+
+ #displayInfo {
+   border: 1px solid #DFDFDF;
+ }
+  
+
+ 

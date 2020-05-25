@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Weather Dashboard</title>
+</head>
+ 
+<body>
+   <header id="relativeHeader">
+       <h1>Weather Dashboard</h1>
+   </header>
+  
+    <div class="row">
+        <div id="citySearch" class="col-lg-4">
+                <p id=searchText>   Search for a City:</p>
+            <div>
+                <form class="example" action="action_page.php">
+                    <input type="text" id="search" name="search">
+                    <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="row">
+                    <button type="submit" class="cityBtn">Austin</button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cityBtn">Chicago</button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cityBtn">New York</button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cityBtn">Orlando</button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cityBtn">San Francisco</button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cityBtn">Seattle</button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cityBtn">Denver</button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cityBtn">Atlanta</button>
+                </div>
+            </div>
+        </div>
+        <div class="container col-lg-8 weather">
+            <div id="displayInfo">
+                <h2 id="city"></h2>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="windspeed"></span></p>
+                <p>UV Index: <span id="uvindex"></span></p>
+            </div>  
+            <div id="forecast">
+                <h2>5-Day Forecast:</h2>
+            </div>
+        </div>
+    </div>
+
+    
+ 
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+   <script src="./script.js"></script>
+ 
+</body>
+ 
+</html>
