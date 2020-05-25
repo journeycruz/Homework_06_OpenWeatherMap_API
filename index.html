@@ -26,42 +26,57 @@
                     <input type="text" id="search" name="search">
                     <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
                 </form>
-                <div class="row">
-                    <button type="submit" class="cityBtn">Austin</button>
-                </div>
-                <div class="row">
-                    <button type="submit" class="cityBtn">Chicago</button>
-                </div>
-                <div class="row">
-                    <button type="submit" class="cityBtn">New York</button>
-                </div>
-                <div class="row">
-                    <button type="submit" class="cityBtn">Orlando</button>
-                </div>
-                <div class="row">
-                    <button type="submit" class="cityBtn">San Francisco</button>
-                </div>
-                <div class="row">
-                    <button type="submit" class="cityBtn">Seattle</button>
-                </div>
-                <div class="row">
-                    <button type="submit" class="cityBtn">Denver</button>
-                </div>
-                <div class="row">
-                    <button type="submit" class="cityBtn">Atlanta</button>
-                </div>
+                <br>
+
+                <div id="cBtns">
+                    <div class="row">
+                        <button type="submit" id="4671654" class="cityBtn btn btn-block">Austin</button>
+                    </div>
+                    <div class="row">
+                        <button type="submit" id="4887398" class="cityBtn btn btn-block">Chicago</button>
+                    </div>
+                    <div class="row">
+                        <button type="submit" id="5128581" class="cityBtn btn btn-block">New York</button>
+                    </div>
+                    <div class="row">
+                        <button type="submit" id="4167147" class="cityBtn btn btn-block">Orlando</button>
+                    </div>
+                    <div class="row">
+                        <button type="submit" id="5391959" class="cityBtn btn btn-block">San Francisco</button>
+                    </div>
+                    <div class="row">
+                        <button type="submit" id="5809844" class="cityBtn btn btn-block">Seattle</button>
+                    </div>
+                    <div class="row">
+                        <button type="submit" id="5419384" class="cityBtn btn btn-block">Denver</button>
+                    </div>
+                    <div class="row">
+                        <button type="submit" id="4180439" class="cityBtn btn btn-block">Atlanta</button>
+                    </div>
+                </div>    
             </div>
         </div>
         <div class="container col-lg-8 weather">
-            <div id="displayInfo">
-                <h2 id="city"></h2>
-                <p>Temperature: <span id="temperature"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
-                <p>Wind Speed: <span id="windspeed"></span></p>
-                <p>UV Index: <span id="uvindex"></span></p>
-            </div>  
+            <div id="centerDiv">
+                <div id="displayInfo">
+                    <h2 id="city"></h2>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <p>Wind Speed: <span id="windspeed"></span></p>
+                    <p>UV Index: <span id="uvindex"></span></p>
+                </div>  
+            </div>
             <div id="forecast">
-                <h2>5-Day Forecast:</h2>
+                <div id="cardWrap">
+                    <h2>5-Day Forecast:</h2>
+                    <div class="row">
+                        <div class="forecastCard" id="card1"></div>
+                        <div class="forecastCard" id="card2"></div>
+                        <div class="forecastCard" id="card3"></div>
+                        <div class="forecastCard" id="card4"></div>
+                        <div class="forecastCard" id="card5"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
