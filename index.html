@@ -17,76 +17,100 @@
    <header id="relativeHeader">
        <h1>Weather Dashboard</h1>
    </header>
-  
-    <div class="row">
-        <div id="citySearch" class="col-lg-4">
-                <p id=searchText>   Search for a City:</p>
-            <div>
-                <form class="example" action="action_page.php">
-                    <input type="text" id="search" name="search">
-                    <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
-                </form>
-                <br>
-
-                <div id="cBtns">
-                    <div class="row">
-                        <button type="submit" id="4671654" class="cityBtn btn btn-block">Austin</button>
-                    </div>
-                    <div class="row">
-                        <button type="submit" id="4887398" class="cityBtn btn btn-block">Chicago</button>
-                    </div>
-                    <div class="row">
-                        <button type="submit" id="5128581" class="cityBtn btn btn-block">New York</button>
-                    </div>
-                    <div class="row">
-                        <button type="submit" id="4167147" class="cityBtn btn btn-block">Orlando</button>
-                    </div>
-                    <div class="row">
-                        <button type="submit" id="5391959" class="cityBtn btn btn-block">San Francisco</button>
-                    </div>
-                    <div class="row">
-                        <button type="submit" id="5809844" class="cityBtn btn btn-block">Seattle</button>
-                    </div>
-                    <div class="row">
-                        <button type="submit" id="5419384" class="cityBtn btn btn-block">Denver</button>
-                    </div>
-                    <div class="row">
-                        <button type="submit" id="4180439" class="cityBtn btn btn-block">Atlanta</button>
-                    </div>
-                </div>    
-            </div>
-        </div>
-        <div class="container col-lg-8 weather">
-            <div id="centerDiv">
-                <div id="displayInfo">
-                    <h2 id="city"></h2>
-                    <p>Temperature: <span id="temperature"></span></p>
-                    <p>Humidity: <span id="humidity"></span></p>
-                    <p>Wind Speed: <span id="windspeed"></span></p>
-                    <p>UV Index: <span id="uvindex"></span></p>
-                </div>  
-            </div>
-            <div id="forecast">
-                <div id="cardWrap">
-                    <h2>5-Day Forecast:</h2>
-                    <div class="row">
-                        <div class="forecastCard" id="card1"></div>
-                        <div class="forecastCard" id="card2"></div>
-                        <div class="forecastCard" id="card3"></div>
-                        <div class="forecastCard" id="card4"></div>
-                        <div class="forecastCard" id="card5"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
+   <div class="row">
+       <div id="citySearch" class="col-lg-4">
+           <p id=searchText> Search for a City:</p>
+           <div>
+               <div class="searchForm">
+                   <input type="text" id="search" name="search">
+                   <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+               </div>
+               <br>
+               <div id="cBtns">
+                   <div class="row">
+                       <button type="submit" id="4671654" class="cityBtn btn btn-block">Austin</button>
+                   </div>
+                   <div class="row">
+                       <button type="submit" id="4887398" class="cityBtn btn btn-block">Chicago</button>
+                   </div>
+                   <div class="row">
+                       <button type="submit" id="5128581" class="cityBtn btn btn-block">New York</button>
+                   </div>
+                   <div class="row">
+                       <button type="submit" id="4167147" class="cityBtn btn btn-block">Orlando</button>
+                   </div>
+                   <div class="row">
+                       <button type="submit" id="5391959" class="cityBtn btn btn-block">San Francisco</button>
+                   </div>
+                   <div class="row">
+                       <button type="submit" id="5809844" class="cityBtn btn btn-block">Seattle</button>
+                   </div>
+                   <div class="row">
+                       <button type="submit" id="5419384" class="cityBtn btn btn-block">Denver</button>
+                   </div>
+                   <div class="row">
+                       <button type="submit" id="4180439" class="cityBtn btn btn-block">Atlanta</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="container col-lg-8 weather">
+           <div id="centerDiv">
+               <div id="displayInfo">
+                   <div class="cityHeader">
+                       <h3 id="city"></h3>
+                       <span><img id="weatherIcon" src="" alt=""></span>
+                   </div>
+                   <p>Temperature: <span id="temperature"></span></p>
+                   <p>Humidity: <span id="humidity"></span></p>
+                   <p>Wind Speed: <span id="windspeed"></span></p>
+                   <p>UV Index: <span id="uvindex"></span></p>
+               </div>
+           </div>
+           <div id="forecast">
+               <div id="cardWrap">
+                   <h3 id="forecastHeadText">5-Day Forecast:</h3>
+                   <div class="row">
+                       <div class="forecastCard" id="card1">
+                           <h5 id="card1date"></h5>
+                           <img class="cardimg" id="card1img" src="" alt="">
+                           <p>Temp: <span id="card1temp"></span></p>
+                           <p>Humidity: <span id="card1humidity"></span></p>
+                       </div>
+                       <div class="forecastCard " id="card2">
+                           <h5 id="card2date"></h5>
+                           <img class="cardimg" id="card2img" src="" alt="">
+                           <p>Temp: <span id="card2temp"></span></p>
+                           <p>Humidity: <span id="card2humidity"></span></p>
+                       </div>
+                       <div class="forecastCard " id="card3">
+                           <h5 id="card3date"></h5>
+                           <img class="cardimg" id="card3img" src="" alt="">
+                           <p>Temp: <span id="card3temp"></span></p>
+                           <p>Humidity: <span id="card3humidity"></span></p>
+                       </div>
+                       <div class="forecastCard " id="card4">
+                           <h5 id="card4date"></h5>
+                           <img class="cardimg" id="card4img" src="" alt="">
+                           <p>Temp: <span id="card4temp"></span></p>
+                           <p>Humidity: <span id="card4humidity"></span></p>
+                       </div>
+                       <div class="forecastCard " id="card5">
+                           <h5 id="card5date"></h5>
+                           <img class="cardimg" id="card5img" src="" alt="">
+                           <p>Temp: <span id="card5temp"></span></p>
+                           <p>Humidity: <span id="card5humidity"></span></p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
  
+   <footer class="footer-copyright text-center py-3">© Journey Cruz 2020</footer>
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
    <script src="./script.js"></script>
- 
 </body>
  
 </html>
