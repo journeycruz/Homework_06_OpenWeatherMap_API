@@ -17,14 +17,14 @@ if (!Array.isArray(allInputs) || !allInputs.length) {
 $("#searchBtn").on("click ", function() {
    queryType = "search";
    var q = document.getElementById("search").value;
-   var weatherQueryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + q + "&units=imperial" + "&apikey=" + apikey;
+   var weatherQueryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + q + "&units=imperial" + "&apikey=" + apikey;
    getWeather(weatherQueryURL);
 });
 // on city button click
 $(".cityBtn").on("click ", function() {
    queryType = "city button";
    var cityId = this.id;
-   var weatherQueryURL = "http://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&units=imperial" + "&apikey=" + apikey;
+   var weatherQueryURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&units=imperial" + "&apikey=" + apikey;
    getWeather(weatherQueryURL);
 });
  
@@ -39,7 +39,7 @@ function getWeather(weatherQueryURL) {
        $("#city").text(cityName + " " + currentDay);
        // get icon and set url
        var icon = response.weather[0].icon;
-       var iconURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png ";
+       var iconURL = "https://openweathermap.org/img/wn/" + icon + "@2x.png ";
        var cardImg = document.getElementById("weatherIcon");
        cardImg.setAttribute("src", iconURL);
        var temp = response.main.temp;
@@ -53,10 +53,10 @@ function getWeather(weatherQueryURL) {
        var lon = response.coord.lon;
        var lat = response.coord.lat;
        // build UV query url and call getUV function
-       var UVQueryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=" + apikey + "&lat=" + lat + "&lon=" + lon;
+       var UVQueryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" + apikey + "&lat=" + lat + "&lon=" + lon;
        getUV(UVQueryURL);
        // build forecast query url and call getUV function
-       var forecastQueryURL = "http://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=imperial" + "&appid=" + apikey;
+       var forecastQueryURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=imperial" + "&appid=" + apikey;
        getForecast(forecastQueryURL);
  
        // add to local storage if queryType is search
@@ -122,7 +122,7 @@ function getForecast(forecastQueryURL) {
                $("#" + cardID + "date").text(date);
                // get icon and set url
                var icon = currentDay.weather[0].icon;
-               var iconURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png ";
+               var iconURL = "https://openweathermap.org/img/wn/" + icon + "@2x.png ";
                var cardImg = document.getElementById(cardID + "img");
                cardImg.setAttribute("src", iconURL);
                // get temp
