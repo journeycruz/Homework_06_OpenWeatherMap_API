@@ -1,4 +1,4 @@
-# Homework_06_Weather_API
+# Weather_OpenWeatherMapApi
 
 Here is a functional weather application that provides current weather data, and a 5-day forecast for whatever city a user searches for. There are also buttons for popular cities on the page so that you can easily access weather info for those cities. 
 
